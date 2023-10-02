@@ -4,7 +4,6 @@ class Processo:
         self.prioridade = prioridade
         self.tempo_execucao = tempo_execucao
 
-# Função para obter a prioridade de um processo
 def obter_prioridade(processo):
     return processo.prioridade
 
@@ -20,7 +19,6 @@ if __name__ == "__main__":
 
     print("Simulador de ready queue (PS):")
 
-    # Ordenar os processos por prioridade usando a função de chave personalizada
     processos.sort(key=obter_prioridade)
 
     tempo_total = 0
